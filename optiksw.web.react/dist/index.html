@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="Web site created using create-react-app" />
+    <!-- Call App Mode on ios devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Remove Tap Highlight on Windows Phone IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- base css -->
+    <!--<link id="vendorsbundle" rel="stylesheet" media="screen, print" href="vendor/smart-admin-4-5-1/css/vendors.bundle.css">
+    <link id="appbundle" rel="stylesheet" media="screen, print" href="vendor/smart-admin-4-5-1/css/app.bundle.css">
+    <link id="mytheme" rel="stylesheet" media="screen, print" href="#">
+    <link id="myskin" rel="stylesheet" media="screen, print" href="vendor/smart-admin-4-5-1/css/skins/skin-master.css">-->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-Jlbe2gpZ.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <link rel="mask-icon" href="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%2020010904//EN'%20'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='186.000000pt'%20height='186.000000pt'%20viewBox='0%200%20186.000000%20186.000000'%20preserveAspectRatio='xMidYMid%20meet'%3e%3cmetadata%3e%20Created%20by%20potrace%201.11,%20written%20by%20Peter%20Selinger%202001-2013%20%3c/metadata%3e%3cg%20transform='translate(0.000000,186.000000)%20scale(0.100000,-0.100000)'%20fill='%23000000'%20stroke='none'%3e%3cpath%20d='M0%20930%20l0%20-650%20930%200%20930%200%200%20650%200%20650%20-930%200%20-930%200%200%20-650z'/%3e%3c/g%3e%3c/svg%3e" color="#5bbad5">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of . in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "./favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Optik SW</title>
+  <script type="module" crossorigin src="/assets/index-xH4qGle1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-cXzK6WDY.css">
+</head>
+<body class="mod-bg-1" data-select2-id="43">
+    <!-- DOC: script to save and load page settings -->
+    <script type="text/javascript">
+        /**
+         *	This script should be placed right after the body tag for fast execution
+         *	Note: the script is written in pure javascript and does not depend on thirdparty library
+         **/
+        'use strict';
+
+        var classHolder = document.getElementsByTagName("BODY")[0],
+            /**
+             * Load from localstorage
+             **/
+            themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+                {},
+            themeURL = themeSettings.themeURL || '',
+            themeOptions = themeSettings.themeOptions || '';
+        /**
+         * Load theme options
+         **/
+        if (themeSettings.themeOptions) {
+            classHolder.className = themeSettings.themeOptions;
+            console.log("%c✔ Theme settings loaded", "color: #148f32");
+        }
+        else {
+            console.log("%c✔ Heads up! Theme settings is empty or does not exist, loading default settings...", "color: #ed1c24");
+        }
+        if (themeSettings.themeURL && !document.getElementById('mytheme')) {
+            var cssfile = document.createElement('link');
+            cssfile.id = 'mytheme';
+            cssfile.rel = 'stylesheet';
+            cssfile.href = themeURL;
+            document.getElementsByTagName('head')[0].appendChild(cssfile);
+
+        }
+        else if (themeSettings.themeURL && document.getElementById('mytheme')) {
+            document.getElementById('mytheme').href = themeSettings.themeURL;
+        }
+        /**
+         * Save to localstorage
+         **/
+        var saveSettings = function () {
+            themeSettings.themeOptions = String(classHolder.className).split(/[^\w-]+/).filter(function (item) {
+                return /^(nav|header|footer|mod|display)-/i.test(item);
+            }).join(' ');
+            if (document.getElementById('mytheme')) {
+                themeSettings.themeURL = document.getElementById('mytheme').getAttribute("href");
+            };
+            localStorage.setItem('themeSettings', JSON.stringify(themeSettings));
+        }
+        /**
+         * Reset settings
+         **/
+        var resetSettings = function () {
+            localStorage.setItem("themeSettings", "");
+        }
+
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- END Page Settings -->
+    <!-- base vendor bundle:
+         DOC: if you remove pace.js from core please note on Internet Explorer some CSS animations may execute before a page is fully loaded, resulting 'jump' animations
+                    + pace.js (recommended)
+                    + jquery.js (core)
+                    + jquery-ui-cust.js (core)
+                    + popper.js (core)
+                    + bootstrap.js (core)
+                    + slimscroll.js (extension)
+                    + app.navigation.js (core)
+                    + ba-throttle-debounce.js (core)
+                    + waves.js (extension)
+                    + smartpanels.js (extension)
+                    + src/../jquery-snippets.js (core) -->
+    <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
+
+    <script type="text/javascript" src="vendor/smart-admin-4-5-1/js/vendors.bundle.js"></script>
+    <script type="text/javascript" src="vendor/smart-admin-4-5-1/js/app.bundle.js"></script>
+</body>
+</html>

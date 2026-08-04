@@ -1,0 +1,53 @@
+table.order-measurements,
+table.order-measurement-eyes {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table.order-measurements {
+    margin-bottom: -2px;
+    border: 2px solid #555;
+    width: 100%;
+}
+
+table.order-measurements th,
+table.order-measurements td  {
+    border: 1px solid #555;
+    padding: 0.25em;
+}
+table.order-measurements th {
+    width: 5em;
+    
+    margin: 0;
+    padding: 0
+}
+table.order-measurements th h4 {
+    margin: 0;
+    padding: 0;
+    width: 5em;
+}
+.order-measurement-eye {
+    width: 100px;
+}
+.order-measurement-value {
+    width: 60px;
+}
+.order-measurement-pupil-distance {
+    vertical-align: top;
+}
+.order-measurement-pupil-distance h4 {
+    font-size: 1em;
+}
+.order-measurement-layer-data {
+    width: 240px;
+    vertical-align: top;
+}
+.order-measurement-other-data {
+    width: 140px;
+    vertical-align: top;
+}
+.order-measurement-other-data h4,
+.order-measurement-pupil-distance h4 {
+    margin: 0;
+    padding: 0.25em 0;
+}

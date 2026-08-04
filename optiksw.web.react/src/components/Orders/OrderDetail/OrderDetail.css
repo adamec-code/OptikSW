@@ -1,0 +1,5 @@
+@media print{
+    .filter-panel, .navbar, h1 { 
+        display:none;
+    }
+  }

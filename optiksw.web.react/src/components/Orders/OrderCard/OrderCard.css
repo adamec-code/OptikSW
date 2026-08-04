@@ -1,0 +1,20 @@
+.order-wrapper {
+    width: 1000px;
+    margin: 1em;
+}
+.order-wrapper h3 {
+    border: 2px solid #555;
+    margin: 0 0 -2px;
+    padding: 0.5em;
+}
+.order-wrapper h3.order-price {
+    text-align: right;
+}
+.order-customer {
+    border: 2px solid #555;
+    padding: 0.5em;
+}
+.order-customer-label {
+    width: 5em;
+    display: inline-block;
+}

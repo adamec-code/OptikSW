@@ -1,0 +1,14 @@
+
+@import '../../vendor/smart-admin-4-5-1/scss/bootstrap.scss';
+@import '../../vendor/smart-admin-4-5-1/scss/app.core.scss';
+@import '../../vendor/smart-admin-4-5-1/scss/app.icons.scss';
+@import '../../vendor/smart-admin-4-5-1/scss/theme-demo.scss';
+
+.css-t3ipsp-control {
+    border-color: #886ab5 !important;
+    box-shadow: none !important;
+}
+
+html {
+    font-size: 112.5%; // místo výchozích 100 % (16px) → cca 18px, škáluje se proporčně vše v rem                                                                                                                                 
+}

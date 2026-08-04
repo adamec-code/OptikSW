@@ -1,0 +1,10 @@
+<ag-grid-angular 
+    style="width: 800px; height: 500px;" 
+    class="ag-theme-alpine"
+    [rowData]="rowData$ | async" 
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [pagination]="true"
+    (gridReady)="onGridReady"
+    (cellClicked)="onCellClicked">
+</ag-grid-angular>

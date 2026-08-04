@@ -1,0 +1,13 @@
+/* #BOOTSTRAP AND MIXINS - Base Unmodified Bootstrap file with theme mixins
+========================================================================== */
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables'; 
+@import './node_modules/bootstrap/scss/mixins';
+@import './vendor/smart-admin-4-5-1/scss/_mixins/mixins';
+
+/* #BASE - Base Variable file along with font library, and colors.
+========================================================================== */
+@import './vendor/smart-admin-4-5-1/scss/_modules/variables';
+@import './vendor/smart-admin-4-5-1/scss/_modules/_fonts';
+@import './vendor/smart-admin-4-5-1/scss/_modules/_placeholders';
+@import './vendor/smart-admin-4-5-1/scss/_modules/_custom';
